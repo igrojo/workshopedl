@@ -39,10 +39,10 @@ o365:
     outputs:
       - resultPath: ./o365-ips.txt
 
-o365:
-  - name: mine O365
-    miner: O365Miner
+AWSIPRangesMiner:
+  - name: mine AWS
+    miner: AWSIPRangesMiner
     args:
-      instance: Worldwide
     outputs:
-      - resultPath: ./o365-ips.txt
+      - resultPath: ./aws-ips.txt
+      
