@@ -46,3 +46,16 @@ AWSIPRangesMiner:
     outputs:
       - resultPath: ./aws-ips.txt
       
+GoogleCloudNetblocksMiner:
+  - name: mine Google_Cloud
+    miner: GoogleCloudNetblocksMiner
+    args:
+    outputs:
+      - resultPath: ./googlecloud-ips.txt
+      
+GoogleNetblocksMiner:
+  - name: mine Google_Service
+    miner: GoogleNetblocksMiner
+    args:
+    outputs:
+      - resultPath: ./googleservice-ips.txt
