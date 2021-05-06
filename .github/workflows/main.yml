@@ -36,6 +36,14 @@ jobs:
         configSection: o365
       env:
         O365MINER_CLIENT_GUID: ${{ secrets.GUID }}
+        
+    - name: Fetch AWS
+      # here we pin a specific commit, for increased security
+      uses: jtschichold/mm-cloud-services-miners@v0
+      with:
+        config: ./cloud-services-mining-config.yml
+        configSection: AWSIPRangesMiner 
+
 
     # Filter & Transform
     - name: Process IP lists
