@@ -56,7 +56,7 @@ jobs:
       uses: jtschichold/mm-cloud-services-miners@v0
       with:
         config: ./cloud-services-mining-config.yml
-        configSection: GGoogleNetblocksMiner 
+        configSection: GoogleNetblocksMiner 
 
 
     # Filter & Transform
