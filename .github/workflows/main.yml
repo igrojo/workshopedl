@@ -44,6 +44,20 @@ jobs:
         config: ./cloud-services-mining-config.yml
         configSection: AWSIPRangesMiner 
 
+    - name: Fetch Google Cloud 
+      # here we pin a specific commit, for increased security
+      uses: jtschichold/mm-cloud-services-miners@v0
+      with:
+        config: ./cloud-services-mining-config.yml
+        configSection: GoogleCloudNetblocksMiner 
+        
+    - name: Fetch Google Services 
+      # here we pin a specific commit, for increased security
+      uses: jtschichold/mm-cloud-services-miners@v0
+      with:
+        config: ./cloud-services-mining-config.yml
+        configSection: GGoogleNetblocksMiner 
+
 
     # Filter & Transform
     - name: Process IP lists
